@@ -20,7 +20,7 @@ export const displayError = (error) => {
 };
 
 // Complex actions
-export const getDogData = () => {
+export const getDogInfo = () => {
   return (dispatch) => {
     dispatch(startFetch());
     try {

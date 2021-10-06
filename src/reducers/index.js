@@ -26,7 +26,7 @@ export const reducer = (state = initialState, action) => {
         ...state,
         dogPicture: "",
         isFetching: false,
-        error: action.payload,
+        errorMessage: action.payload,
       };
     default:
       console.error("Invalid action passed to reducer!");
