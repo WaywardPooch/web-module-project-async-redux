@@ -58,6 +58,7 @@ img {
 }
 .dog img {
   aspect-ratio: 1;
+  background-color: rgba(47, 47, 47, 0.75);
   border-radius: 10rem;
   border: solid 0.5rem var(--theme-color-accent);
   max-width: var(--theme-width-image);
