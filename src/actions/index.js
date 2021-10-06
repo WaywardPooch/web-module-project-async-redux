@@ -30,7 +30,7 @@ export const getDogInfo = () => {
         dispatch(updateDogInfo(response.data.message));
       })
       .catch((error) => {
-        dispatch(displayError(error));
+        dispatch(displayError(toString(error)));
       });
   };
 };

@@ -18,7 +18,7 @@ export const Dog = (props) => {
   if (errorMessage) {
     return (
       <>
-        <h1>We're sorry; something messed up!</h1>
+        <h1>We're sorry; something messed up! :-(</h1>
         <p>Error Message: {errorMessage}</p>
       </>
     );
@@ -36,8 +36,7 @@ export const Dog = (props) => {
 
   // If no errors & fetching is complete, show the dog
   return (
-    <div>
-      <h1>Dog</h1>
+    <div className="dog">
       <img src={dogPicture} alt="dog" />
       <button onClick={handleChangeDog}>Get New Dog!</button>
     </div>

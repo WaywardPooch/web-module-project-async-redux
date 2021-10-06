@@ -1,0 +1,67 @@
+:root {
+  --theme-color-accent: coral;
+  --theme-color-dark: #2f2f2f;
+  --theme-color-light: #eee;
+  --theme-width-desktop: 1000px;
+  --theme-width-image: 50rem;
+  box-sizing: border-box;
+  font-family: "Noto Sans Display", sans-serif;
+  font-size: 62.5%;
+  line-height: 1.5;
+}
+
+body {
+  background-image: url("./../assets/background.jpg");
+  background-size: cover;
+}
+
+h1 {
+  background-color: var(--theme-color-dark);
+  color: var(--theme-color-light);
+  font-size: 3.6rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+img {
+  display: block;
+  margin: 4rem auto;
+}
+
+.app {
+  background-color: rgba(47, 47, 47, 0.75);
+  min-height: 100vh;
+}
+
+.dog {
+  margin: 0 auto;
+  max-width: var(--theme-width-desktop);
+}
+.dog img {
+  aspect-ratio: 1;
+  border-radius: 10rem;
+  border: solid 0.5rem var(--theme-color-accent);
+  max-width: var(--theme-width-image);
+  object-fit: cover;
+  width: 90%;
+}
+.dog button {
+  background-color: var(--theme-color-accent);
+  border-radius: 7px;
+  border: none;
+  color: var(--theme-color-light);
+  display: block;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin: 2rem auto;
+  padding: 1rem 4rem;
+  text-transform: uppercase;
+  transition: 150ms;
+}
+.dog button:hover {
+  background-color: var(--theme-color-light);
+  color: var(--theme-color-dark);
+}

@@ -6,7 +6,9 @@ import { Provider } from "react-redux";
 import logger from "redux-logger";
 import thunk from "redux-thunk";
 // State management
-import { reducer } from './reducers';
+import { reducer } from "./reducers";
+// Styles
+import "./styles/normalize.css";
 // Components
 import App from "./App";
 

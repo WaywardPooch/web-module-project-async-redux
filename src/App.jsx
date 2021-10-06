@@ -1,12 +1,13 @@
+import "./styles/app.css";
 import Dog from "./components/Dog";
 
 const App = () => {
   return (
-    <>
-      <h1>Asynchronous Redux</h1>
+    <div className="app">
+      <h1>Dog Image Getter</h1>
       <Dog />
-    </>
+    </div>
   );
-}
+};
 
 export default App;
