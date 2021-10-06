@@ -18,7 +18,7 @@ export const Dog = (props) => {
   if (errorMessage) {
     return (
       <>
-        <h1>We're sorry; something messed up! :-(</h1>
+        <h2>We're sorry; something messed up! :-(</h2>
         <p>Error Message: {errorMessage}</p>
       </>
     );
@@ -28,7 +28,7 @@ export const Dog = (props) => {
   if (isFetching) {
     return (
       <>
-        <h1>Loading new dog image...</h1>
+        <h2>Loading new dog image...</h2>
         <p>Please wait! :-)</p>
       </>
     );
@@ -37,7 +37,9 @@ export const Dog = (props) => {
   // If no errors & fetching is complete, show the dog
   return (
     <div className="dog">
-      <img src={dogPicture} alt="dog" />
+      <div className="dogImgContainer">
+        <img src={dogPicture} alt="dog" />
+      </div>
       <button onClick={handleChangeDog}>Get New Dog!</button>
     </div>
   );

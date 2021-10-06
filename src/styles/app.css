@@ -26,6 +26,22 @@ h1 {
   text-align: center;
   text-transform: uppercase;
 }
+h2,
+p {
+  color: var(--theme-color-light);
+  text-align: center;
+}
+h2 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 2rem;
+}
+h1,
+img,
+button {
+  box-shadow: 0 2px 8px rgba(47, 47, 47, 0.75);
+}
 img {
   display: block;
   margin: 4rem auto;
