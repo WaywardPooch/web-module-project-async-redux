@@ -23,11 +23,14 @@ export const displayError = (error) => {
 export const getDogInfo = () => {
   return (dispatch) => {
     dispatch(startFetch());
-    try {
-      const dogInfo = axios.get("https://dog.ceo/api/breeds/image/random");
-      dispatch(updateDogInfo(dogInfo.data));
-    } catch (error) {
-      dispatch(displayError(error));
-    }
+    axios
+      .get("https://dog.ceo/api/breeds/image/random")
+      .then((response) => {
+        console.log("DOG INFO REQUEST", response.data.message);
+        dispatch(updateDogInfo(response.data.message));
+      })
+      .catch((error) => {
+        dispatch(displayError(error));
+      });
   };
 };

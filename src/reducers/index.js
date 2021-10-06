@@ -17,7 +17,7 @@ export const reducer = (state = initialState, action) => {
     case FETCH_SUCCESS:
       return {
         ...state,
-        dogPicture: action.payload.message,
+        dogPicture: action.payload,
         isFetching: false,
         errorMessage: "",
       };
@@ -29,7 +29,6 @@ export const reducer = (state = initialState, action) => {
         errorMessage: action.payload,
       };
     default:
-      console.error("Invalid action passed to reducer!");
       return state;
   }
 };
